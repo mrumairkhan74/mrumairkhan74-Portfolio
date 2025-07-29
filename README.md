@@ -1,5 +1,5 @@
 ## Live Demo
-https://mrumairkhan74-portfolio.vercel.app/
+<a href="https://mrumairkhan74-portfolio.vercel.app" target="_blank" >Live Demo</a>
 
 
 # Portfolio
@@ -66,8 +66,5 @@ You can deploy this portfolio on platforms like Netlify, Vercel, or GitHub Pages
 Feel free to reach out to me:
 
 Email: mrumairkhan74@gmail.com
-
-LinkedIn: linkedin.com/in/mrumairkhan75
 LinkedIn: linkedin.com/in/mrumairkhan74
-
 GitHub: github.com/mrumairkhan74
