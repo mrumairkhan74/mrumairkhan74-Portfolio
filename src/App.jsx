@@ -1,9 +1,14 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
-import Home from "./component/pages/Home";
-import Navbar from "./component/pages/Navbar";
 import { useState, useEffect } from "react";
-import Loading from "./component/background/Loading";
-import Footer from "./component/pages/Footer";
+
+import Navbar from "./components/pages/Navbar";
+import Loading from "./components/background/Loading";
+import Footer from "./components/pages/Footer";
+import Home from "./components/pages/Home";
+import About from "./components/pages/About";
+import Skills from "./components/pages/Skills";
+import Projects from "./components/Project/Projects";
+import Contact from "./components/pages/Contact";
 
 function App() {
   const [loading, setLoading] = useState(true);
@@ -13,15 +18,23 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-  return loading ? (
-    <Loading />
-  ) : (
+  if (loading) return <Loading />;
+
+  return (
     <BrowserRouter>
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-      </Routes>
-      <Footer />
+      <div className="flex flex-col min-h-screen">
+        <Navbar />
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/about" element={<About />} />
+            <Route path="/skills" element={<Skills />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/contact" element={<Contact />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
     </BrowserRouter>
   );
 }

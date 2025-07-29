@@ -1,1 +1,26 @@
+@import url("https://fonts.googleapis.com/css2?family=Goldman:wght@400;700&display=swap");
 @import "tailwindcss";
+
+.stylish-btn {
+  position: relative;
+  overflow: hidden;
+  z-index: 0;
+}
+
+.stylish-btn::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  width: 0%;
+  height: 0%;
+  border-radius: 5px;
+  background-color: #5153e9; /* Tailwind indigo-600 */
+  z-index: -1;
+  transition: width 0.4s ease, height 0.4s ease;
+}
+
+.stylish-btn:hover::before {
+  width: 100%;
+  height: 100%;
+}
