@@ -47,7 +47,7 @@ const Home = () => {
           data-aos="zoom-out"
           data-aos-easing="linear"
           data-aos-duration="3000">
-          <img
+          <img loading="lazy"
             src="https://cdni.iconscout.com/illustration/premium/thumb/professional-software-developer-5529997-4609273.png"
             alt="Professional Developer"
             className="w-full max-w-md mx-auto"

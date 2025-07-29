@@ -4,7 +4,7 @@ const ProjectCard = ({ image, title, description, tech, demoLink, codeLink }) =>
   return (
     <div className="bg-white border shadow-md rounded-xl p-6 hover:shadow-lg transition-all duration-300 w-full flex flex-col justify-between">
 
-      <img
+      <img loading="lazy"
         src={image}
         alt={title}
         className="w-full h-48 object-contain rounded-md mb-4"
