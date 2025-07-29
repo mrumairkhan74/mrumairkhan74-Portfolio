@@ -1,5 +1,5 @@
-## Live Demo
-<a href="https://mrumairkhan74-portfolio.vercel.app" target="_blank" >Live Demo</a>
+## Live Demo  
+<a href="https://mrumairkhan74-portfolio.vercel.app" target="_blank" rel="noopener noreferrer">Live Demo</a>
 
 
 # Portfolio
