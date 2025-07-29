@@ -48,7 +48,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-white px-4 py-2 space-y-2 shadow-md">
+        <div className="md:hidden bg-indigo-500 px-4 py-2 space-y-2 shadow-md">
           <NavLink to="/" onClick={() => setIsOpen(false)} active={location.pathname === '/'}>Home</NavLink>
           <NavLink to="/about" onClick={() => setIsOpen(false)} active={location.pathname === '/about'}>About</NavLink>
           <NavLink to="/skills" onClick={() => setIsOpen(false)} active={location.pathname === '/skills'}>Skills</NavLink>
