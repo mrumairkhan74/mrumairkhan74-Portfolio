@@ -1,10 +1,12 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import About from "./About"; // Make sure this path is correct based on your folder structure
+import About from "./About";
 import Skills from "./Skills";
 import Contact from "./Contact";
 import Projects from "../Project/Projects";
+
 import '../../index.css'
+
 const Home = () => {
   return (
     <div className="bg-white">
@@ -24,22 +26,26 @@ const Home = () => {
           <div className="flex flex-col sm:flex-row justify-center lg:justify-start gap-4">
             <Link
               to="/projects"
+              title="Explore My Work"
               className="bg-indigo-600 text-white px-6 py-3 rounded-md text-sm hover:bg-indigo-700 transition"
             >
               Explore Work
             </Link>
             <Link
               to="/contact"
+              title="Contact Me"
               className="border stylish-btn border-indigo-600 text-indigo-600 px-6 py-3 rounded-md text-sm hover:text-white transition"
             >
               Get in Touch
             </Link>
-            <Link
-              to="/contact"
+            <a
+              href="https://drive.google.com/file/d/1-G0I-m4EhfM-fWBT8pK0MAm5dCgw2v6I/view"
               className="stylish-btn border border-indigo-600 text-indigo-600 px-6 py-3 rounded-md text-sm transition-all duration-300 ease-in-out hover:text-white"
+              target="_blank"
+              title="Resume/CV"
             >
               Download CV
-            </Link>
+            </a>
           </div>
         </div>
 
@@ -102,11 +108,11 @@ const Home = () => {
         data-aos-duration="3000">
         <Projects />
         <Link
-              to="/contact"
-              className="stylish-btn border border-indigo-600 text-indigo-600 px-6 py-3 rounded-md text-sm transition-all duration-300 ease-in-out hover:text-white"
-            >
-              View More
-            </Link>
+          to="/contact"
+          className="stylish-btn border border-indigo-600 text-indigo-600 px-6 py-3 rounded-md text-sm transition-all duration-300 ease-in-out hover:text-white"
+        >
+          View More
+        </Link>
       </section>
       <section className="max-w-7xl mx-auto px-6 md:px-20 py-16" data-aos="fade-up"
         data-aos-easing="linear"
@@ -118,6 +124,7 @@ const Home = () => {
         data-aos-duration="3000">
         <Contact />
       </section>
+ 
     </div>
   );
 };
