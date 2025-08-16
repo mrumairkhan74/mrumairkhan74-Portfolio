@@ -39,7 +39,7 @@ const Home = () => {
               Get in Touch
             </Link>
             <a
-              href="https://drive.google.com/file/d/1-G0I-m4EhfM-fWBT8pK0MAm5dCgw2v6I/view"
+              href="https://drive.google.com/file/d/1PbS1S-_kySxlljV3f8RxuQBzQxT3XBkI/view?usp=drivesdk"
               className="stylish-btn border border-indigo-600 text-indigo-600 px-6 py-3 rounded-md text-sm transition-all duration-300 ease-in-out hover:text-white"
               target="_blank"
               title="Resume/CV"
