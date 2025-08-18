@@ -6,6 +6,10 @@ import Contact from "./Contact";
 import Projects from "../Project/Projects";
 
 import '../../index.css'
+import Experience from "./Experience";
+import Education from "./Eduction";
+import Certificate from "./Certificate";
+import Blog from "./Blog";
 
 const Home = () => {
   return (
@@ -15,7 +19,7 @@ const Home = () => {
         <div className="flex-1 text-center lg:text-left" data-aos="zoom-in"
           data-aos-easing="linear"
           data-aos-duration="3000">
-          <h1 className="text-4xl md:text-5xl font-extrabold font-[Goldman] text-indigo-500 mb-4 leading-tight">
+          <h1 className="text-4xl md:text-5xl font-extrabold font-[Goldman] text-sky-500 mb-4 leading-tight">
             Full-Stack Web Solutions<br />
             for Modern Businesses
           </h1>
@@ -27,20 +31,20 @@ const Home = () => {
             <Link
               to="/projects"
               title="Explore My Work"
-              className="bg-indigo-600 text-white px-6 py-3 rounded-md text-sm hover:bg-indigo-700 transition"
+              className="bg-sky-600 text-white px-6 py-3 rounded-md text-sm hover:bg-sky-700 transition"
             >
               Explore Work
             </Link>
             <Link
               to="/contact"
               title="Contact Me"
-              className="border stylish-btn border-indigo-600 text-indigo-600 px-6 py-3 rounded-md text-sm hover:text-white transition"
+              className="border stylish-btn border-sky-600 text-sky-600 px-6 py-3 rounded-md text-sm hover:text-white transition"
             >
               Get in Touch
             </Link>
             <a
-              href="https://drive.google.com/file/d/1y1rOk23BVlDDdoBCn90mJ8kwVr9mNCGM/view?usp=drivesdk"
-              className="stylish-btn border border-indigo-600 text-indigo-600 px-6 py-3 rounded-md text-sm transition-all duration-300 ease-in-out hover:text-white"
+              href="https://drive.google.com/file/d/1qn1i3_B29PB78ShS_OPxyHGTvfEVjABT/view?usp=drive_link"
+              className="stylish-btn border border-sky-600 text-sky-600 px-6 py-3 rounded-md text-sm transition-all duration-300 ease-in-out hover:text-white"
               target="_blank"
               title="Resume/CV"
             >
@@ -54,9 +58,9 @@ const Home = () => {
           data-aos-easing="linear"
           data-aos-duration="3000">
           <img loading="lazy"
-            src="https://cdni.iconscout.com/illustration/premium/thumb/professional-software-developer-5529997-4609273.png"
+            src="./images/mainperson.png"
             alt="Professional Developer"
-            className="w-full max-w-md mx-auto"
+            className="w-full max-w-md mx-auto object-cover drop-shadow-lg drop-shadow-sky-500"
           />
         </div>
       </section>
@@ -65,7 +69,7 @@ const Home = () => {
       <section className="max-w-7xl mx-auto px-6 md:px-20 py-12 bg-gray-50" data-aos="zoom-in"
         data-aos-easing="linear"
         data-aos-duration="3500">
-        <h2 className="text-4xl font-semibold font-[Goldman] tracking-[3px] uppercase text-indigo-500 mb-8 text-center">
+        <h2 className="text-4xl font-semibold font-[Goldman] tracking-[3px] uppercase text-sky-500 mb-8 text-center">
           Core Expertise
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" >
@@ -98,28 +102,54 @@ const Home = () => {
       </section>
 
       {/* About Component Section */}
-      <section className="max-w-7xl mx-auto px-6 md:px-20 py-16" data-aos="fade-up"
+      <section className="max-w-7xl mx-auto px-6 md:px-20 py-6" data-aos="fade-up"
         data-aos-easing="linear"
         data-aos-duration="3000">
         <About />
       </section>
-      <section className="max-w-7xl mx-auto items-center flex flex-col px-6 md:px-20 py-16" data-aos="fade-up"
+      <section className="max-w-7xl mx-auto px-6 md:px-20 py-6" data-aos="fade-up"
         data-aos-easing="linear"
         data-aos-duration="3000">
-        <Projects />
+        <Education />
+      </section>
+      <section className="max-w-7xl mx-auto px-6 md:px-20 py-6" data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="3000">
+        <Experience />
+      </section>
+      <section className="max-w-7xl mx-auto items-center flex flex-col px-6 md:px-20 py-6" data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="3000">
+        <Projects limit={2} />
         <Link
-          to="/contact"
-          className="stylish-btn border border-indigo-600 text-indigo-600 px-6 py-3 rounded-md text-sm transition-all duration-300 ease-in-out hover:text-white"
+          to="/projects"
+          className="stylish-btn border border-sky-600 text-sky-600 px-6 py-3 rounded-md text-sm transition-all duration-300 ease-in-out hover:text-white"
         >
           View More
         </Link>
       </section>
-      <section className="max-w-7xl mx-auto px-6 md:px-20 py-16" data-aos="fade-up"
+      <section className="max-w-7xl mx-auto px-6 md:px-20 py-6" data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="3000">
+        <Certificate />
+      </section>
+      <section className="max-w-7xl mx-auto px-6 md:px-20 py-6" data-aos="fade-up"
         data-aos-easing="linear"
         data-aos-duration="3000">
         <Skills />
       </section>
-      <section className="max-w-7xl mx-auto px-6 md:px-20 py-16" data-aos="flip-left"
+      <section className="max-w-7xl mx-auto items-center flex flex-col px-6 md:px-20 py-6" data-aos="fade-up"
+        data-aos-easing="linear"
+        data-aos-duration="3000">
+        <Blog limit={3} />
+        <Link
+          to="/blogs"
+          className="stylish-btn border border-sky-600 text-sky-600 px-6 py-3 rounded-md text-sm transition-all duration-300 ease-in-out hover:text-white"
+        >
+          View More
+        </Link>
+      </section>
+      <section className="max-w-7xl mx-auto px-6 md:px-20 py-6" data-aos="flip-left"
         data-aos-easing="linear"
         data-aos-duration="3000">
         <Contact />

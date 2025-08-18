@@ -52,29 +52,43 @@ const projectList = [
   },
 ];
 
-const Projects = () => {
+const Projects = ({ limit }) => {
+  // ✅ correctly slice based on limit prop
+  const displayedProjects = limit ? projectList.slice(0, limit) : projectList;
+
   return (
-    <section className="py-20 bg-gray-50" id="projects" data-aos="fade-up"
+    <section
+      className="py-20 bg-gray-50"
+      id="projects"
+      data-aos="fade-up"
       data-aos-easing="linear"
-      data-aos-duration="3000">
+      data-aos-duration="3000"
+    >
       <div className="max-w-6xl mx-auto px-4">
-        <h2 className="text-4xl font-bold text-center text-indigo-700 mb-12">
+        <h2 className="text-4xl font-bold font-[Goldman] tracking-[3px] text-center text-sky-700 mb-12">
           My Projects
         </h2>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-6" data-aos="flip-left"
-        data-aos-easing="linear"
-        data-aos-duration="3000">
-          {projectList.map((project, index) => {
-            let colSpanClass = "col-span-1";
 
+        <div
+          className="grid grid-cols-1 md:grid-cols-3 gap-6"
+          data-aos="flip-left"
+          data-aos-easing="linear"
+          data-aos-duration="3000"
+        >
+          {displayedProjects.map((project, index) => {
+            let colSpanClass = "col-span-1";
             if (index === 0 || index === 3 || index === 4) {
               colSpanClass = "md:col-span-2";
             }
 
             return (
-              <div key={index} className={colSpanClass} data-aos="flip-right"
-              data-aos-easing="linear"
-              data-aos-duration="3000">
+              <div
+                key={index}
+                className={colSpanClass}
+                data-aos="flip-right"
+                data-aos-easing="linear"
+                data-aos-duration="3000"
+              >
                 <ProjectCard {...project} />
               </div>
             );

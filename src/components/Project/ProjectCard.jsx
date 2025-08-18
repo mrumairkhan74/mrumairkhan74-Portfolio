@@ -18,7 +18,7 @@ const ProjectCard = ({ image, title, description, tech, demoLink, codeLink }) =>
           {tech.map((item, index) => (
             <span
               key={index}
-              className="bg-indigo-100 text-indigo-700 px-2 py-1 rounded-full text-xs font-medium"
+              className="bg-sky-100 text-sky-700 px-2 py-1 rounded-full text-xs font-medium"
             >
               {item}
             </span>
@@ -31,7 +31,7 @@ const ProjectCard = ({ image, title, description, tech, demoLink, codeLink }) =>
           href={demoLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-indigo-600 text-white px-4 py-2 rounded-md text-sm hover:bg-indigo-700 transition"
+          className="bg-sky-600 text-white px-4 py-2 rounded-md text-sm hover:bg-sky-700 transition"
         >
           Live Demo
         </a>
@@ -39,7 +39,7 @@ const ProjectCard = ({ image, title, description, tech, demoLink, codeLink }) =>
           href={codeLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="text-indigo-600 border border-indigo-600 px-4 py-2 rounded-md text-sm hover:bg-indigo-100 transition"
+          className="text-sky-600 border border-sky-600 px-4 py-2 rounded-md text-sm hover:bg-sky-100 transition"
         >
           Code
         </a>

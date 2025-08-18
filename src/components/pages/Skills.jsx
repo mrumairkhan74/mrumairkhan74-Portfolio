@@ -10,28 +10,34 @@ import {
   FaDatabase,
 } from "react-icons/fa";
 import { SiMongodb, SiTailwindcss, SiExpress } from "react-icons/si";
+import { DiMysql } from "react-icons/di";
+import { BiLogoPostgresql } from "react-icons/bi";
+import { RiNextjsFill } from "react-icons/ri";
 
 const skills = [
   { icon: <FaHtml5 />, label: "HTML" },
   { icon: <FaCss3Alt />, label: "CSS" },
   { icon: <FaJsSquare />, label: "JavaScript" },
   { icon: <FaReact />, label: "React" },
+  { icon: <RiNextjsFill />, label: "NextJs" },
   { icon: <FaNodeJs />, label: "Node.js" },
   { icon: <SiExpress />, label: "Express" },
   { icon: <SiMongodb />, label: "MongoDB" },
   { icon: <SiTailwindcss />, label: "Tailwind CSS" },
   { icon: <FaGithub />, label: "GitHub" },
   { icon: <FaDatabase />, label: "MongoDB Atlas" },
+  { icon: <DiMysql />, label: "MySQL" },
+  { icon: <BiLogoPostgresql />, label: "PostgreSQL" },
 ];
 
 const Skills = () => {
 
 
   return (
-    <section className="py-16 px-6 bg-gray-100"  id="skills" data-aos="fade-up"
-    data-aos-easing="linear"
-    data-aos-duration="3000">
-      <h2 className="text-4xl font-bold text-center font-[Goldman] tracking-[3px] uppercase  text-indigo-600 mb-12">
+    <section className="py-16 px-6 bg-gray-100" id="skills" data-aos="fade-up"
+      data-aos-easing="linear"
+      data-aos-duration="3000">
+      <h2 className="text-4xl font-bold text-center font-[Goldman] tracking-[3px] uppercase  text-sky-600 mb-12">
         Skills
       </h2>
 
@@ -39,7 +45,7 @@ const Skills = () => {
         {skills.map((skill, index) => (
           <div
             key={index}
-            className="flex flex-col items-center text-indigo-500 hover:scale-110 hover:shadow-lg transition-transform duration-300 p-3"
+            className="flex flex-col items-center text-sky-500 hover:scale-110 hover:shadow-lg transition-transform duration-300 p-3"
             aria-label={skill.label}
           >
             <div className="text-5xl mb-2">{skill.icon}</div>
