@@ -31,7 +31,7 @@ const ProjectCard = ({ image, title, description, tech, demoLink, codeLink }) =>
           href={demoLink}
           target="_blank"
           rel="noopener noreferrer"
-          className="bg-sky-600 text-white px-4 py-2 rounded-md text-sm hover:bg-sky-700 transition"
+          className="bg-sky-600 text-white px-4 py-2 rounded-md text-sm hover:bg-sky-600 transition"
         >
           Live Demo
         </a>

@@ -8,7 +8,7 @@ const Certificate = () => {
       institute: "MindLuster",
       location: "Online",
       duration: "2025",
-      image: "./images/Mindluster.jpg", // put your certificate image here
+      image: "./images/Mindluster.webp", // put your certificate image here
       highlights: [
         "Built full-stack projects with React, Node.js, Express, and MongoDB",
         "Learned authentication, REST APIs, and deployment best practices",
@@ -20,7 +20,7 @@ const Certificate = () => {
       institute: "Developer's Hub Corporation",
       location: "Online",
       duration: "2024",
-      image: "./images/intership.jpg",
+      image: "./images/intership.webp",
       highlights: [
         "Mastered HTML, CSS, and JavaScript fundamentals",
         "Built responsive web designs with Flexbox and Grid",

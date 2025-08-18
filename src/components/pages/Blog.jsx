@@ -45,7 +45,7 @@ const Blog = ({limit}) => {
               {blog.title}
             </h3>
             <p className="text-gray-600 flex-grow">{blog.desc}</p>
-            <button title="read-more" className="mt-4 px-4 py-2 bg-sky-600 text-white rounded-xl hover:bg-sky-700 transition">
+            <button title="read-more" className="mt-4 px-4 py-2 bg-sky-600 text-white rounded-xl hover:bg-sky-600 transition">
               Read More
             </button>
           </div>

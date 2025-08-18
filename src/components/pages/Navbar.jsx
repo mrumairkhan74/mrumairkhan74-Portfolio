@@ -13,7 +13,7 @@ const Navbar = () => {
   const toggleMenu = () => setIsOpen(!isOpen);
 
   return (
-    <header className="w-full shadow-md sticky top-0 z-50 my-5 bg-sky-500 rounded-md overflow-hidden font-[Goldman]"
+    <header className="w-full shadow-md sticky top-0 z-50 my-5 bg-sky-600 rounded-md overflow-hidden font-[Goldman]"
       data-aos="fade-down"
       data-aos-easing="linear"
       data-aos-duration="1500">
@@ -49,7 +49,7 @@ const Navbar = () => {
 
       {/* Mobile Menu */}
       {isOpen && (
-        <div className="md:hidden bg-sky-500 px-4 py-2 space-y-2 shadow-md">
+        <div className="md:hidden bg-sky-600 px-4 py-2 space-y-2 shadow-md">
           <NavLink to="/" onClick={() => setIsOpen(false)} active={location.pathname === '/'}>Home</NavLink>
           <NavLink to="/about" onClick={() => setIsOpen(false)} active={location.pathname === '/about'}>About</NavLink>
           <NavLink to="/blogs" onClick={() => setIsOpen(false)} active={location.pathname === '/blogs'}>Blogs</NavLink>

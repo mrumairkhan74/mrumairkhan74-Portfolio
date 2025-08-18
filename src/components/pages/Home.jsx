@@ -31,7 +31,7 @@ const Home = () => {
             <Link
               to="/projects"
               title="Explore My Work"
-              className="bg-sky-600 text-white px-6 py-3 rounded-md text-sm hover:bg-sky-700 transition"
+              className="bg-sky-600 text-white px-6 py-3 rounded-md text-sm hover:bg-sky-600 transition"
             >
               Explore Work
             </Link>
@@ -59,10 +59,11 @@ const Home = () => {
           data-aos-easing="linear"
           data-aos-duration="3000">
           <img loading="lazy"
-            src="./images/mainperson.png"
+            src="./images/mainperson.webp"
+            sizes="(max-width: 768px) 100vw, 364px"
             alt="Professional Developer"
-            width="500"
-            height="500"
+            width="300"
+            height="300"
             title="Umair Khan - Full Stack Developer"
             className="w-full max-w-md mx-auto object-cover drop-shadow-lg drop-shadow-sky-500"
           />
@@ -73,7 +74,7 @@ const Home = () => {
       <section className="max-w-7xl mx-auto px-6 md:px-20 py-12 bg-gray-50" data-aos="zoom-in"
         data-aos-easing="linear"
         data-aos-duration="3500">
-        <h2 className="text-4xl font-semibold font-[Goldman] tracking-[3px] uppercase text-sky-500 mb-8 text-center">
+        <h2 className="text-4xl font-semibold font-[Goldman] tracking-[3px] uppercase text-sky-700 mb-8 text-center">
           Core Expertise
         </h2>
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6" >
@@ -158,7 +159,7 @@ const Home = () => {
         data-aos-duration="3000">
         <Contact />
       </section>
- 
+
     </div>
   );
 };
