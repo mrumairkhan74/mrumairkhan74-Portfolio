@@ -46,6 +46,9 @@ const Home = () => {
               href="https://drive.google.com/file/d/1qn1i3_B29PB78ShS_OPxyHGTvfEVjABT/view?usp=drive_link"
               className="stylish-btn border border-sky-600 text-sky-600 px-6 py-3 rounded-md text-sm transition-all duration-300 ease-in-out hover:text-white"
               target="_blank"
+              loading="lazy"
+              rel="noopener noreferrer"
+
               title="Resume/CV"
             >
               Download CV
